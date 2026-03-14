@@ -7,7 +7,7 @@ export const useWallet = () => useContext(WalletContext);
 
 export const WalletProvider = ({ children }) => {
   const [currentAccount, setCurrentAccount] = useState(null);
-  const [role, setRole] = useState('student'); // 'student', 'issuer', 'verifier', 'admin'
+  const [role, setRole] = useState('student'); 
   const [isConnecting, setIsConnecting] = useState(false);
   const [error, setError] = useState(null);
 
